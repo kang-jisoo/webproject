@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>슬기로운 볼링생활</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+            width: 960px;
+            margin: 10px auto;
+            overflow: scroll;
+        }
+    img {
+        text-align: right;
+        margin: 10px;
+    }
+    #top {
+        background: rgb(247, 230, 230);
+        position: relative;
+        height: 150px;}
+    #top_container {
+        width: auto;
+        height: 80px;
+        margin: 10px;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    #title {
+        position: absolute;
+        top: 60%;
+        left: 3%;
+    }
+    #left { float: left; width: 210px; height: 460px;  padding-left: 30px; margin-top: 30px;}
+    #right { float: left; width: 690px; height: 460px; padding-left: 30px; margin-top: 30px; }
+    @keyframes imagerotation {
+            0% {transform: rotate(-25deg);}
+            10% {transform: rotate(30deg);}
+            20% {transform: rotate(-45deg);}
+            30% {transform: rotate(50deg);}
+            40% {transform :rotate(70deg);}
+            50% {transform: rotate(90deg);}
+            100% {transform: rotate(90deg);}
+        }
+        #tran:hover{
+            animation-name: imagerotation;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        @media  screen and (max-width: 767px) {
+            body {width: auto;}
+            #top_container {left: 50%;}
+            #left {height: auto; width: auto;}
+            #top {width: auto;}
+            #right {width: auto;}
+
+        }
+</style>
+<body>
+    <div id = "top">
+        <h2 id = "title">슬기로운 볼링생활</h3>
+        <div id="top_container">
+            <img id="tran" src="bowling_pin.png" width="30" height="80">
+            <img id="tran" src="bowling_pin.png" width="30" height="80">
+            <img id="tran" src="bowling_pin.png" width="30" height="80">
+        </div>
+    </div>
+    <div id="left">
+    <nav id = "main-navigation">
+        <ul>
+            <li class = "menu-item"><a href="#bowling">볼링이란</a></li>
+            <li class = "menu-item"><a href="#diary">나의 볼링 일기</a></li>
+            <li class = "menu-item"><a href="findboll.html">알맞은 공 찾기</a></li>
+            <li class = "menu-item"><a href="learn_bowling.html">볼링배우기</a></li>
+        </ul>
+    </div>
+    <div id="right">
+    <p>안녕하세요. 강지수입니다. 잘하진 못해도 볼링을 좋아합니다.<br>
+        <span id = "highlight">에버리지 100, 최고 130입니다.</span><br>
+        공에 스핀을 넣지는 못하지만 언젠가 배우고 싶습니다!
+    </p><br><br>
+    <h2 id="bowling">볼링이란</h2><hr>
+    <p>공을 굴려 핀이나 다른 목표물을 쓰러뜨리는 스포츠이다. 일반적으로 매끄러운 나무, 혹은 합성 재질로 된 바닥에 공을 굴려 핀을 맞추는 방식이다. 야외에서 하는 경우 잔디밭에 공을 굴리기도 한다. 대표적인 핀 종류로 10핀 볼링(영어: ten-pin bowling), 9핀 볼링, 5핀 볼링, 캔들핀 볼링, 덕핀 볼링 등이 있다. 볼링화를 신고 하는데, 이는 나라마다 규격이 다르다.</p><br>
+    <h4>볼링장비</h4>
+    <p>볼링 장비로는 공과 신발, 핸드 가드(hand guard), 보관용 가방이 있다.</p><br>
+    <h4>볼링용어</h4>
+    <p>애버리지(average): 게임의 득점계를 시합수로 나눈 평균 점수.<br>
+        스트라이크(strike): 각 프레임의 제1구로 10개의 핀 전부를 쓰러뜨리는 것.<br>
+        스페어(spare): 제1구로 쓰러뜨리지 못했던 핀을 제2구에서 쓰러뜨리는 경우.<br>
+        스핀(spin): 공에 회전력을 가하는 것.<br>
+        터키(turkey): 3회 연속 스트라이크를 얻는 것.<br>
+        퍼펙트 게임(perfect game): 1프레임에서 10프레임까지 합계 12구 전부가 스트라이크인 경우. 득점은 300점 만점.<br>
+    </p><br><br>
+    <h2 id="diary">나의 볼링 일기</h2><hr>
+    <p><img src="2019.06.17.jpg" width="300" height="180">
+        날짜: 2019.06.17<br>
+        어김없이 오늘도 딱 에버리지 정도 쳤다. 하지만 벌써 코로나로 인해 볼링친지 2년이 다 되어간다.
+        볼링장은 보통 환기가 잘 안되는 구조이기 때문에 걱정되서 갈 수 없었다.
+        얼른 코로나가 끝나서 볼링치러 가고 싶다.
+    </p>
+</div>
+</body>
+</html>

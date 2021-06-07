@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>슬기로운 볼링생활</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+            width: 960px;
+            margin: 10px auto;
+            overflow: scroll;
+    }
+    img {
+        text-align: right;
+        margin: 10px;
+    }
+    #top {
+        background: rgb(247, 230, 230);
+        position: relative;
+        height: 150px;}
+    #top_container {
+        width: auto;
+        height: 80px;
+        margin: 10px;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    #title {
+        position: absolute;
+        top: 60%;
+        left: 3%;
+    }
+    #left { float: left; width: 210px; height: 460px;  padding-left: 30px; margin-top: 30px;}
+    #right { float: left; width: 690px; height: 460px; padding-left: 30px; margin-top: 30px; }
+    @keyframes imagerotation {
+            0% {transform: rotate(-25deg);}
+            10% {transform: rotate(30deg);}
+            20% {transform: rotate(-45deg);}
+            30% {transform: rotate(50deg);}
+            40% {transform :rotate(70deg);}
+            50% {transform: rotate(90deg);}
+            100% {transform: rotate(90deg);}
+        }
+        #tran:hover{
+            animation-name: imagerotation;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+        @media  screen and (max-width: 767px) {
+            body {width: auto;}
+            #top_container {left: 50%;}
+            #left {height: auto; width: auto;}
+            #top {width: auto;}
+            #right {width: auto;}
+        }
+</style>
+<body>
+    <div id = "top">
+        <h2 id = "title">슬기로운 볼링생활</h3>
+        <div id="top_container">
+            <img id="tran" src="bowling_pin.png" width="30" height="80">
+            <img id="tran" src="bowling_pin.png" width="30" height="80">
+            <img id="tran" src="bowling_pin.png" width="30" height="80">
+        </div>
+    </div>
+    <div id="left">
+        <nav id = "main-navigation">
+            <ul>
+                <li class = "menu-item"><a href="index.html">볼링이란</a></li>
+                <li class = "menu-item"><a href="index.html">나의 볼링 일기</a></li>
+                <li class = "menu-item"><a href="findboll.html">알맞은 공 찾기</a></li>
+                <li class = "menu-item"><a href="learn_bowling.html">볼링배우기</a></li>
+            </ul>
+    </div>
+    <div id="right">
+        <h3>내 체중에는 무슨 공을 사용해야 할까?</h3>
+        <hr>
+        <script>
+            var pound;
+            var kg = prompt ("체중을 입력하세요");
+            kg = parseInt(kg);
+            if(kg >= 73)
+                pound = 16;
+            else if(kg >= 68)
+                pound = 15;
+            else if(kg >= 64)
+                pound = 14;
+            else if(kg >=60)
+                pound = 13;
+            else if(kg >= 55)
+                pound = 12;
+            else if(kg >= 50)
+                pound = 11;
+            else if(kg >= 45)
+                pound = 10;
+            else if(kg >= 40)
+                pound = 9;
+            else pound = 8;
+            document.writeln(pound + "파운드 공을 선택하세요.<br>");
+            document.writeln("비록 체중에 맞는 공이더라도 꼭 자신의 팔에 무리가 없을만한 무게의 공을 선택해주세요!")
+        </script>
+    </div>
+</body>
+</html>
